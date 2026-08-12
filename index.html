@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>First Aid Pharmacy | Laldighi Bazar</title>
+
+  <meta name="description"
+        content="First Aid Pharmacy at Laldighi Bazar, Phulbari, Dinajpur. Pharmacy and first aid healthcare products for the local community.">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f9f7;
+      background: #f5faf8;
       color: #17352b;
       line-height: 1.6;
     }
 
+    /* HEADER */
+
     header {
       background: #087f5b;
       color: white;
-      padding: 18px 6%;
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     .logo {
@@ -36,26 +49,44 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
+      font-size: 15px;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+
     .hero {
-      padding: 80px 6%;
       background: white;
+      padding: 90px 7%;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 42px;
+    .badge {
+      display: inline-block;
+      background: #e5f7ef;
       color: #087f5b;
-      margin-bottom: 15px;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #087f5b;
+      margin-bottom: 18px;
     }
 
     .hero p {
-      font-size: 18px;
-      max-width: 650px;
+      max-width: 700px;
       margin: auto;
-      color: #53645e;
+      color: #52645d;
+      font-size: 18px;
     }
 
     .buttons {
@@ -64,7 +95,7 @@
 
     .btn {
       display: inline-block;
-      padding: 13px 24px;
+      padding: 14px 25px;
       margin: 6px;
       border-radius: 8px;
       text-decoration: none;
@@ -79,57 +110,161 @@
     .secondary {
       border: 2px solid #087f5b;
       color: #087f5b;
+      background: white;
     }
 
+    /* SECTIONS */
+
     .section {
-      padding: 60px 6%;
+      padding: 70px 7%;
       text-align: center;
     }
 
     .section h2 {
-      font-size: 30px;
-      margin-bottom: 30px;
       color: #087f5b;
+      font-size: 32px;
+      margin-bottom: 35px;
     }
 
+    .section-intro {
+      max-width: 650px;
+      margin: -15px auto 35px;
+      color: #61716b;
+    }
+
+    /* SERVICES */
+
     .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
 
     .card {
       background: white;
-      padding: 30px 20px;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      padding: 35px 25px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 15px;
     }
 
     .card h3 {
-      margin-bottom: 10px;
       color: #087f5b;
+      margin-bottom: 10px;
     }
 
-    .contact {
-      background: #e8f5ef;
+    .card p {
+      color: #61716b;
     }
+
+    /* INFO */
+
+    .info-section {
+      background: #e9f7f1;
+    }
+
+    .info-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .info-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .info-box h3 {
+      color: #087f5b;
+      margin-bottom: 8px;
+    }
+
+    /* CONTACT */
+
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .contact-box p {
+      margin: 10px 0;
+    }
+
+    /* FOOTER */
 
     footer {
       background: #17352b;
       color: white;
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
     }
 
-    @media (max-width: 600px) {
+    footer p {
+      margin: 5px;
+      color: #d8e6e1;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
       nav {
         display: none;
       }
 
+      .hero {
+        padding: 65px 5%;
+      }
+
       .hero h1 {
-        font-size: 32px;
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 55px 5%;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+
+      .cards,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 30px 20px;
       }
     }
   </style>
@@ -137,83 +272,179 @@
 
 <body>
 
+  <!-- HEADER -->
+
   <header>
-    <div class="logo">First Aid Pharmacy</div>
+
+    <div class="logo">
+      First Aid Pharmacy
+    </div>
 
     <nav>
+      <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </header>
 
-  <section class="hero">
-    <h1>Your Trusted Local Pharmacy</h1>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="badge">
+      🏥 Local Pharmacy & Healthcare
+    </div>
+
+    <h1>
+      Your Trusted Local Pharmacy
+    </h1>
 
     <p>
-      First Aid Pharmacy provides trusted pharmacy services
-      and essential healthcare products for the local community.
+      First Aid Pharmacy provides essential pharmacy,
+      first aid and healthcare products for the local community.
     </p>
 
     <div class="buttons">
+
       <a class="btn primary" href="tel:+8801XXXXXXXXX">
-        Call Pharmacy
+        📞 Call Pharmacy
       </a>
 
       <a class="btn secondary" href="#contact">
-        Contact Us
+        📍 Visit Us
       </a>
+
     </div>
+
   </section>
 
+
+  <!-- SERVICES -->
+
   <section class="section" id="services">
+
     <h2>Our Services</h2>
+
+    <p class="section-intro">
+      Essential pharmacy and first aid products for everyday healthcare needs.
+    </p>
 
     <div class="cards">
 
       <div class="card">
-        <h3>💊 Medicines</h3>
+        <div class="icon">💊</div>
+        <h3>Medicines</h3>
         <p>
           Essential medicines and healthcare products.
         </p>
       </div>
 
       <div class="card">
-        <h3>🩺 Health Support</h3>
+        <div class="icon">🩺</div>
+        <h3>Healthcare</h3>
         <p>
-          Basic health-related support for our customers.
+          Basic healthcare products and supplies.
         </p>
       </div>
 
       <div class="card">
-        <h3>🚑 First Aid</h3>
+        <div class="icon">🚑</div>
+        <h3>First Aid</h3>
         <p>
-          First aid and emergency healthcare supplies.
+          First aid supplies for everyday needs.
         </p>
       </div>
 
     </div>
+
   </section>
 
-  <section class="section contact" id="contact">
+
+  <!-- PHARMACY INFORMATION -->
+
+  <section class="section info-section">
+
+    <h2>Pharmacy Information</h2>
+
+    <div class="info-grid">
+
+      <div class="info-box">
+        <h3>📍 Location</h3>
+        <p>
+          Laldighi Bazar,<br>
+          Phulbari, Dinajpur
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>🕐 Opening Hours</h3>
+        <p>
+          Please contact us<br>
+          for current opening hours.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>📞 Contact</h3>
+        <p>
+          +8801XXXXXXXXX
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+
     <h2>Visit First Aid Pharmacy</h2>
 
-    <p>
-      📍 Laldighi Bazar, Phulbari, Dinajpur, Bangladesh
-    </p>
+    <div class="contact-box">
 
-    <p>
-      📞 Phone: +8801XXXXXXXXX
-    </p>
+      <p>
+        <strong>📍 Address:</strong>
+        Laldighi Bazar, Phulbari, Dinajpur, Bangladesh
+      </p>
 
-    <div class="buttons">
-      <a class="btn primary" href="tel:+8801XXXXXXXXX">
-        Call Now
-      </a>
+      <p>
+        <strong>📞 Phone:</strong>
+        +8801XXXXXXXXX
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn primary" href="tel:+8801XXXXXXXXX">
+          📞 Call Now
+        </a>
+
+      </div>
+
     </div>
+
   </section>
 
+
+  <!-- FOOTER -->
+
   <footer>
-    © 2026 First Aid Pharmacy. All Rights Reserved.
+
+    <p>
+      <strong>First Aid Pharmacy</strong>
+    </p>
+
+    <p>
+      Laldighi Bazar, Phulbari, Dinajpur
+    </p>
+
+    <p>
+      © 2026 First Aid Pharmacy. All Rights Reserved.
+    </p>
+
   </footer>
 
 </body>
