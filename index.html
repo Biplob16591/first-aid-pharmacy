@@ -4,777 +4,699 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>First Aid Pharmacy | Laldighi Bazar, Phulbari, Dinajpur</title>
+<title>First Aid Pharmacy | Laldighi Bazar, Phulbari</title>
 
-<meta name="description" content="First Aid Pharmacy at Laldighi Bazar, Phulbari, Dinajpur. Medicines, healthcare products, first aid supplies and baby care products for the local community.">
-
-<meta name="keywords" content="First Aid Pharmacy, Laldighi Bazar Pharmacy, Phulbari Pharmacy, Dinajpur Pharmacy, medicine shop, healthcare, first aid, baby care">
-
-<meta name="theme-color" content="#16845f">
+<meta name="description"
+content="First Aid Pharmacy at Laldighi Bazar, Phulbari, Dinajpur. Medicines, healthcare products, first aid supplies and baby care products.">
 
 <style>
-
-/* =========================
-   RESET
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #17352b;
-    background: #ffffff;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#18352f;
+    background:#ffffff;
+    line-height:1.6;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button,
-a {
-    -webkit-tap-highlight-color: transparent;
+img{
+    max-width:100%;
+    display:block;
 }
 
 /* =========================
    COLORS
 ========================= */
-
-:root {
-    --green: #16845f;
-    --green-dark: #0f684b;
-    --green-light: #eaf7f2;
-    --green-soft: #f4fbf8;
-    --text: #17352b;
-    --muted: #63766f;
-    --white: #ffffff;
-    --border: #dcece6;
-    --shadow: 0 12px 35px rgba(17, 80, 59, 0.10);
-}
-
-/* =========================
-   CONTAINER
-========================= */
-
-.container {
-    width: min(1180px, 92%);
-    margin: auto;
+:root{
+    --green:#16845f;
+    --green-dark:#075c46;
+    --green-light:#eaf8f2;
+    --green-soft:#f4fbf8;
+    --white:#ffffff;
+    --text:#18352f;
+    --muted:#65736f;
+    --shadow:0 12px 35px rgba(0,80,60,.10);
 }
 
 /* =========================
    HEADER
 ========================= */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: var(--green);
-    box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    height:76px;
+    background:var(--green);
+    color:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
 }
 
-.navbar {
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+.navbar{
+    width:min(1180px,92%);
+    height:100%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: white;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.logo-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: white;
-    color: var(--green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 23px;
-    font-weight: bold;
+.logo-icon{
+    width:42px;
+    height:42px;
+    background:white;
+    color:var(--green);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    font-weight:bold;
 }
 
-.logo-text strong {
-    display: block;
-    font-size: 18px;
-    line-height: 1.1;
+.logo-text strong{
+    display:block;
+    font-size:18px;
+    line-height:1;
 }
 
-.logo-text span {
-    display: block;
-    font-size: 9px;
-    letter-spacing: 3px;
-    margin-top: 3px;
+.logo-text span{
+    display:block;
+    margin-top:4px;
+    font-size:9px;
+    letter-spacing:4px;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
 }
 
-.nav-links a {
-    transition: 0.25s ease;
+.nav-links a{
+    font-size:14px;
+    font-weight:bold;
+    transition:.25s;
 }
 
-.nav-links a:hover {
-    opacity: 0.75;
+.nav-links a:hover{
+    opacity:.75;
 }
 
-.phone-btn {
-    border: 1px solid rgba(255,255,255,0.7);
-    border-radius: 9px;
-    padding: 9px 15px;
-    color: white;
-    font-weight: bold;
+.phone-btn{
+    border:1px solid rgba(255,255,255,.8);
+    border-radius:10px;
+    padding:10px 18px;
+    font-weight:bold;
 }
 
-.phone-btn:hover {
-    background: white;
-    color: var(--green);
-    opacity: 1 !important;
+.menu-btn{
+    display:none;
+    border:0;
+    background:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
 }
 
 /* =========================
    HERO
 ========================= */
-
-.hero {
-    padding: 70px 0 80px;
+.hero{
+    min-height:620px;
     background:
-        radial-gradient(circle at 90% 20%, rgba(22,132,95,0.10), transparent 35%),
-        linear-gradient(180deg, #ffffff 0%, #f7fcfa 100%);
+        linear-gradient(90deg,
+        #ffffff 0%,
+        #ffffff 42%,
+        rgba(255,255,255,.92) 55%,
+        rgba(255,255,255,.15) 72%,
+        rgba(255,255,255,0) 100%),
+        url("pharmacy-store.png") right center/cover no-repeat;
+    display:flex;
+    align-items:center;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
+.hero-inner{
+    width:min(1180px,92%);
+    margin:auto;
 }
 
-.badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 14px;
-    border-radius: 30px;
-    background: var(--green-light);
-    color: var(--green-dark);
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.hero-content{
+    width:55%;
+    padding:70px 0;
 }
 
-.hero h1 {
-    font-size: clamp(42px, 5vw, 64px);
-    line-height: 1.08;
-    color: #132c24;
-    margin-bottom: 22px;
+.badge{
+    display:inline-block;
+    background:#e8f7f1;
+    color:var(--green-dark);
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:22px;
 }
 
-.hero h1 span {
-    color: var(--green);
+.hero h1{
+    font-size:58px;
+    line-height:1.08;
+    color:#152b2a;
+    margin-bottom:22px;
 }
 
-.hero-description {
-    color: var(--muted);
-    max-width: 590px;
-    font-size: 17px;
-    margin-bottom: 20px;
+.hero h1 span{
+    color:var(--green);
 }
 
-.location {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--green-dark);
-    font-weight: bold;
-    margin-bottom: 25px;
+.hero p{
+    color:#596a66;
+    font-size:18px;
+    max-width:620px;
+    margin-bottom:20px;
 }
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.location{
+    color:var(--green-dark);
+    font-weight:bold;
+    margin-bottom:28px;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 13px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 1px solid var(--green);
-    transition: 0.25s ease;
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
-.btn-primary {
-    background: var(--green);
-    color: white;
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 22px;
+    border-radius:9px;
+    font-weight:bold;
+    border:2px solid var(--green);
+    transition:.25s;
 }
 
-.btn-primary:hover {
-    background: var(--green-dark);
-    transform: translateY(-2px);
+.btn-primary{
+    background:var(--green);
+    color:white;
 }
 
-.btn-whatsapp {
-    background: #20a66a;
-    color: white;
-    border-color: #20a66a;
+.btn-primary:hover{
+    background:var(--green-dark);
 }
 
-.btn-whatsapp:hover {
-    background: #168c58;
-    transform: translateY(-2px);
+.btn-whatsapp{
+    background:#1fa678;
+    color:white;
+    border-color:#1fa678;
 }
 
-.btn-outline {
-    background: white;
-    color: var(--green-dark);
+.btn-outline{
+    color:var(--green-dark);
+    background:white;
 }
 
-.btn-outline:hover {
-    background: var(--green-light);
-    transform: translateY(-2px);
+.btn:hover{
+    transform:translateY(-2px);
 }
 
-.hero-image {
-    position: relative;
+/* =========================
+   OPEN STATUS
+========================= */
+.open-status{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    z-index:999;
+    width:245px;
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 15px 45px rgba(0,0,0,.18);
+    border:1px solid #dcece6;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 510px;
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: var(--shadow);
+.open-title{
+    color:var(--green-dark);
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:5px;
 }
 
-.open-card {
-    position: absolute;
-    right: 18px;
-    bottom: 18px;
-    background: white;
-    border-radius: 14px;
-    padding: 16px 20px;
-    min-width: 220px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+.open-time{
+    color:#50625d;
+    font-size:14px;
 }
 
-.open-title {
-    color: var(--green-dark);
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.open-time {
-    color: #465a53;
-    font-size: 14px;
-}
-
-.open-status {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 4px 10px;
-    border-radius: 20px;
-    background: var(--green);
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
+.open-badge{
+    display:inline-block;
+    margin-top:8px;
+    background:var(--green);
+    color:white;
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:12px;
 }
 
 /* =========================
    SECTION COMMON
 ========================= */
-
-section {
-    padding: 80px 0;
+section{
+    padding:90px 0;
 }
 
-.section-heading {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 45px;
+.container{
+    width:min(1180px,92%);
+    margin:auto;
 }
 
-.section-heading h2 {
-    font-size: 36px;
-    line-height: 1.2;
-    color: var(--green-dark);
-    margin-bottom: 12px;
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
 }
 
-.section-heading p {
-    color: var(--muted);
+.section-title h2{
+    color:var(--green);
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:var(--muted);
+    font-size:16px;
 }
 
 /* =========================
    SERVICES
 ========================= */
-
-.services {
-    background: var(--green-soft);
+.services{
+    background:var(--green-soft);
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
 }
 
-.service-card {
-    background: white;
-    border-radius: 16px;
-    padding: 32px 22px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(17,80,59,0.07);
-    border: 1px solid #eef5f2;
-    transition: 0.25s ease;
+.service-card{
+    background:white;
+    padding:38px 25px;
+    text-align:center;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    transition:.3s;
 }
 
-.service-card:hover {
-    transform: translateY(-7px);
-    box-shadow: var(--shadow);
+.service-card:hover{
+    transform:translateY(-7px);
 }
 
-.service-icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background: var(--green-light);
-    margin: 0 auto 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 29px;
+.service-icon{
+    width:66px;
+    height:66px;
+    margin:0 auto 20px;
+    background:#e8f7f1;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
 }
 
-.service-card h3 {
-    color: var(--green-dark);
-    font-size: 17px;
-    margin-bottom: 10px;
+.service-card h3{
+    color:var(--green-dark);
+    font-size:20px;
+    margin-bottom:12px;
 }
 
-.service-card p {
-    color: var(--muted);
-    font-size: 14px;
+.service-card p{
+    color:var(--muted);
+    font-size:14px;
 }
 
 /* =========================
    WHY CHOOSE
 ========================= */
-
-.why {
-    background: #eaf7f2;
+.why{
+    background:#e8f7f1;
 }
 
-.why-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 1.2fr 0.75fr;
-    align-items: center;
-    gap: 28px;
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1.4fr 1fr;
+    gap:28px;
+    align-items:center;
 }
 
-.why-content h2 {
-    color: var(--green-dark);
-    font-size: 31px;
-    line-height: 1.25;
-    margin-bottom: 25px;
+.why-content h2{
+    color:var(--green);
+    font-size:36px;
+    line-height:1.2;
+    margin-bottom:25px;
 }
 
-.features {
-    list-style: none;
+.features{
+    list-style:none;
 }
 
-.features li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 13px 0;
-    color: #29483d;
+.features li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:17px 0;
+    color:#29433d;
 }
 
-.check {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: var(--green);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+.check{
+    width:25px;
+    height:25px;
+    flex:none;
+    background:var(--green);
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
 }
 
-.why-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 17px;
-    box-shadow: var(--shadow);
+.store-image{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:var(--shadow);
 }
 
-.quote-card {
-    background: var(--green);
-    color: white;
-    min-height: 300px;
-    border-radius: 17px;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.quote{
+    min-height:360px;
+    background:var(--green);
+    color:white;
+    border-radius:18px;
+    padding:45px 38px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.quote-mark {
-    font-size: 48px;
-    line-height: 0.8;
-    opacity: 0.7;
-    margin-bottom: 20px;
+.quote-mark{
+    font-size:48px;
+    line-height:1;
+    margin-bottom:20px;
 }
 
-.quote-card h3 {
-    font-size: 23px;
-    line-height: 1.35;
-    margin-bottom: 20px;
+.quote h3{
+    font-size:26px;
+    line-height:1.35;
+    margin-bottom:25px;
 }
 
-.quote-card p {
-    opacity: 0.9;
-    font-size: 14px;
+.quote p{
+    font-size:15px;
 }
 
 /* =========================
-   PHARMACY INFO
+   PHARMACY INFORMATION
 ========================= */
-
-.info {
-    background: white;
+.info{
+    background:white;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.info-card {
-    padding: 30px 25px;
-    background: white;
-    border: 1px solid #edf3f0;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(17,80,59,0.06);
+.info-card{
+    background:white;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:16px;
+    box-shadow:var(--shadow);
 }
 
-.info-icon {
-    font-size: 28px;
-    margin-bottom: 10px;
+.info-icon{
+    font-size:30px;
+    margin-bottom:12px;
 }
 
-.info-card h3 {
-    color: var(--green-dark);
-    margin-bottom: 10px;
+.info-card h3{
+    color:var(--green);
+    margin-bottom:12px;
 }
 
-.info-card p {
-    color: var(--muted);
+.info-card p{
+    color:var(--muted);
 }
 
 /* =========================
    CONTACT
 ========================= */
-
-.contact {
-    background: var(--green-soft);
+.contact{
+    background:var(--green-soft);
 }
 
-.contact-box {
-    background: white;
-    max-width: 850px;
-    margin: auto;
-    padding: 42px;
-    text-align: center;
-    border-radius: 18px;
-    box-shadow: var(--shadow);
+.contact-box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:50px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    text-align:center;
 }
 
-.contact-box p {
-    color: var(--muted);
-    margin-bottom: 10px;
+.contact-box p{
+    margin:12px 0;
+    color:#53645f;
 }
 
-.contact-buttons {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px;
 }
 
 /* =========================
    MAP
 ========================= */
-
-.map-section {
-    background: #eaf7f2;
+.map-section{
+    background:#e8f7f1;
 }
 
-.map-box {
-    background: white;
-    border-radius: 18px;
-    padding: 38px;
-    text-align: center;
-    box-shadow: var(--shadow);
+.map-box{
+    background:white;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    text-align:center;
 }
 
-.map-box h2 {
-    color: var(--green-dark);
-    margin-bottom: 10px;
+.map-box h2{
+    color:var(--green);
+    margin-bottom:8px;
 }
 
-.map-box p {
-    color: var(--muted);
-    margin-bottom: 20px;
+.map-box p{
+    color:var(--muted);
+    margin-bottom:22px;
 }
 
 /* =========================
    FOOTER
 ========================= */
-
-footer {
-    background: #123d31;
-    color: white;
-    padding: 55px 0 20px;
+footer{
+    background:#103d32;
+    color:white;
+    padding:60px 0 20px;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 45px;
-    padding-bottom: 35px;
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
 }
 
-.footer-brand p {
-    margin-top: 18px;
-    color: #c6d8d1;
-    max-width: 330px;
+.footer-brand p{
+    margin-top:18px;
+    color:#b9ccc6;
 }
 
-.footer-column h3 {
-    margin-bottom: 17px;
-    font-size: 17px;
+.footer-title{
+    font-size:18px;
+    margin-bottom:18px;
 }
 
-.footer-column a,
-.footer-column p {
-    display: block;
-    color: #c6d8d1;
-    margin: 9px 0;
-    font-size: 14px;
+.footer-links{
+    list-style:none;
 }
 
-.footer-column a:hover {
-    color: white;
+.footer-links li{
+    margin:10px 0;
+    color:#c5d5d0;
 }
 
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.15);
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    color: #b9ccc5;
-    font-size: 13px;
-}
-
-/* =========================
-   FLOATING WHATSAPP
-========================= */
-
-.whatsapp-float {
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
-    z-index: 900;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #20a66a;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.20);
-    transition: 0.25s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.08);
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:40px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#b9ccc6;
+    font-size:13px;
 }
 
 /* =========================
    MOBILE
 ========================= */
+@media(max-width:900px){
 
-@media (max-width: 950px) {
-
-    .nav-links {
-        gap: 15px;
+    .nav-links{
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        background:var(--green-dark);
+        display:none;
+        flex-direction:column;
+        padding:25px;
+        gap:20px;
     }
 
-    .phone-btn {
-        display: none;
+    .nav-links.active{
+        display:flex;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+    .menu-btn{
+        display:block;
     }
 
-    .hero {
-        padding: 50px 0 60px;
+    .phone-btn{
+        display:none;
     }
 
-    .hero-image img {
-        height: 420px;
+    .hero{
+        min-height:auto;
+        background:
+            linear-gradient(rgba(255,255,255,.90),rgba(255,255,255,.90)),
+            url("pharmacy-store.png") center/cover no-repeat;
     }
 
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .hero-content{
+        width:100%;
+        padding:80px 0;
     }
 
-    .why-grid {
-        grid-template-columns: 1fr;
+    .hero h1{
+        font-size:43px;
     }
 
-    .why-image img,
-    .quote-card {
-        height: auto;
-        min-height: 300px;
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .info-grid {
-        grid-template-columns: 1fr;
+    .why-grid{
+        grid-template-columns:1fr;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
+    .store-image{
+        height:330px;
+    }
+
+    .quote{
+        min-height:260px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .open-status{
+        width:210px;
+        right:12px;
+        bottom:12px;
     }
 }
 
-@media (max-width: 650px) {
+@media(max-width:600px){
 
-    .navbar {
-        min-height: 62px;
+    header{
+        height:68px;
     }
 
-    .logo-text strong {
-        font-size: 16px;
+    .hero h1{
+        font-size:36px;
     }
 
-    .nav-links {
-        gap: 12px;
-        font-size: 12px;
+    .hero p{
+        font-size:16px;
     }
 
-    .nav-links a:nth-child(3) {
-        display: none;
+    section{
+        padding:65px 0;
     }
 
-    .hero {
-        padding: 40px 0 50px;
+    .section-title h2{
+        font-size:30px;
     }
 
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .hero-image img {
-        height: 330px;
-        border-radius: 15px;
-    }
-
-    .open-card {
-        right: 10px;
-        bottom: 10px;
-        min-width: 185px;
-        padding: 12px 15px;
-    }
-
-    section {
-        padding: 60px 0;
-    }
-
-    .section-heading h2 {
-        font-size: 29px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        padding: 27px 20px;
-    }
-
-    .why-content h2 {
-        font-size: 28px;
+    .service-grid{
+        grid-template-columns:1fr;
     }
 
     .contact-box,
-    .map-box {
-        padding: 28px 18px;
+    .map-box{
+        padding:30px 20px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .buttons,
+    .contact-buttons{
+        flex-direction:column;
     }
 
-    .footer-bottom {
-        flex-direction: column;
+    .btn{
+        width:100%;
     }
 
-    .whatsapp-float {
-        right: 15px;
-        bottom: 15px;
+    .footer-bottom{
+        flex-direction:column;
+    }
+
+    .open-status{
+        width:190px;
+        padding:15px;
     }
 }
-
 </style>
 </head>
 
@@ -783,20 +705,20 @@ footer {
 <!-- =========================
      HEADER
 ========================= -->
-
 <header>
-    <div class="container navbar">
+    <div class="navbar">
 
         <a href="#home" class="logo">
             <div class="logo-icon">+</div>
-
             <div class="logo-text">
                 <strong>First Aid</strong>
                 <span>PHARMACY</span>
             </div>
         </a>
 
-        <nav class="nav-links">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
@@ -814,12 +736,9 @@ footer {
 <!-- =========================
      HERO
 ========================= -->
-
-<main>
-
 <section class="hero" id="home">
 
-    <div class="container hero-grid">
+    <div class="hero-inner">
 
         <div class="hero-content">
 
@@ -832,7 +751,7 @@ footer {
                 <span>Local Pharmacy</span>
             </h1>
 
-            <p class="hero-description">
+            <p>
                 First Aid Pharmacy provides essential medicines,
                 first aid supplies and healthcare products
                 for the local community.
@@ -842,7 +761,7 @@ footer {
                 📍 Laldighi Bazar, Phulbari, Dinajpur
             </div>
 
-            <div class="hero-buttons">
+            <div class="buttons">
 
                 <a class="btn btn-primary"
                    href="tel:+8801717713784">
@@ -865,32 +784,6 @@ footer {
 
         </div>
 
-
-        <div class="hero-image">
-
-            <img
-                src="pharmacy-store.png"
-                alt="First Aid Pharmacy"
-            >
-
-            <div class="open-card">
-
-                <div class="open-title">
-                    🕘 We Are Open
-                </div>
-
-                <div class="open-time">
-                    সকাল ৮টা – রাত ১০টা
-                </div>
-
-                <span class="open-status">
-                    প্রতিদিন
-                </span>
-
-            </div>
-
-        </div>
-
     </div>
 
 </section>
@@ -899,86 +792,54 @@ footer {
 <!-- =========================
      SERVICES
 ========================= -->
-
 <section class="services" id="services">
 
     <div class="container">
 
-        <div class="section-heading">
-
+        <div class="section-title">
             <h2>Our Services</h2>
-
             <p>
                 Essential pharmacy and healthcare products
                 for everyday healthcare needs.
             </p>
-
         </div>
-
 
         <div class="service-grid">
 
             <div class="service-card">
-
-                <div class="service-icon">
-                    💊
-                </div>
-
+                <div class="service-icon">💊</div>
                 <h3>Medicines</h3>
-
                 <p>
                     Genuine medicines and essential
                     healthcare products.
                 </p>
-
             </div>
 
-
             <div class="service-card">
-
-                <div class="service-icon">
-                    🩺
-                </div>
-
+                <div class="service-icon">🩺</div>
                 <h3>Healthcare</h3>
-
                 <p>
                     Quality healthcare products for
                     your daily health needs.
                 </p>
-
             </div>
 
-
             <div class="service-card">
-
-                <div class="service-icon">
-                    🚑
-                </div>
-
+                <div class="service-icon">🚑</div>
                 <h3>First Aid</h3>
-
                 <p>
                     First aid and medical supplies
                     for common emergencies.
                 </p>
-
             </div>
 
-
             <div class="service-card">
-
-                <div class="service-icon">
-                    👶
-                </div>
-
+                <div class="service-icon">👶</div>
                 <h3>Baby Care</h3>
-
                 <p>
                     Baby care products for your
                     little one's health and hygiene.
                 </p>
-
             </div>
 
         </div>
@@ -989,76 +850,75 @@ footer {
 
 
 <!-- =========================
-     WHY CHOOSE
+     WHY CHOOSE US
 ========================= -->
-
 <section class="why" id="about">
 
-    <div class="container why-grid">
+    <div class="container">
 
-        <div class="why-content">
+        <div class="why-grid">
 
-            <h2>
-                Why Choose
-                First Aid Pharmacy?
-            </h2>
+            <div class="why-content">
 
-            <ul class="features">
+                <h2>
+                    Why Choose<br>
+                    First Aid Pharmacy?
+                </h2>
 
-                <li>
-                    <span class="check">✓</span>
-                    Genuine and quality medicines
-                </li>
+                <ul class="features">
 
-                <li>
-                    <span class="check">✓</span>
-                    Experienced and friendly service
-                </li>
+                    <li>
+                        <span class="check">✓</span>
+                        Genuine and quality medicines
+                    </li>
 
-                <li>
-                    <span class="check">✓</span>
-                    Affordable prices
-                </li>
+                    <li>
+                        <span class="check">✓</span>
+                        Experienced and friendly service
+                    </li>
 
-                <li>
-                    <span class="check">✓</span>
-                    Trusted by the local community
-                </li>
+                    <li>
+                        <span class="check">✓</span>
+                        Affordable prices
+                    </li>
 
-                <li>
-                    <span class="check">✓</span>
-                    Always here for your good health
-                </li>
+                    <li>
+                        <span class="check">✓</span>
+                        Trusted by the local community
+                    </li>
 
-            </ul>
+                    <li>
+                        <span class="check">✓</span>
+                        Always here for your good health
+                    </li>
 
-        </div>
+                </ul>
 
-
-        <div class="why-image">
-
-            <img
-                src="pharmacy-interior-step3.jpg"
-                alt="First Aid Pharmacy interior"
-            >
-
-        </div>
-
-
-        <div class="quote-card">
-
-            <div class="quote-mark">
-                “
             </div>
 
-            <h3>
-                Your health is our first priority.
-            </h3>
 
-            <p>
-                First Aid Pharmacy<br>
-                – Your Trusted Partner
-            </p>
+            <div>
+                <img
+                    src="pharmacy-interior-step3.jpg"
+                    alt="First Aid Pharmacy interior"
+                    class="store-image">
+            </div>
+
+
+            <div class="quote">
+
+                <div class="quote-mark">“</div>
+
+                <h3>
+                    Your health is our first priority.
+                </h3>
+
+                <p>
+                    First Aid Pharmacy<br>
+                    — Your Trusted Partner
+                </p>
+
+            </div>
 
         </div>
 
@@ -1070,18 +930,17 @@ footer {
 <!-- =========================
      PHARMACY INFORMATION
 ========================= -->
-
 <section class="info">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title">
 
             <h2>Pharmacy Information</h2>
 
             <p>
-                Find our location, opening hours and
-                contact information.
+                Find our location, opening hours
+                and contact information.
             </p>
 
         </div>
@@ -1091,9 +950,7 @@ footer {
 
             <div class="info-card">
 
-                <div class="info-icon">
-                    📍
-                </div>
+                <div class="info-icon">📍</div>
 
                 <h3>Location</h3>
 
@@ -1108,14 +965,12 @@ footer {
 
             <div class="info-card">
 
-                <div class="info-icon">
-                    🕘
-                </div>
+                <div class="info-icon">🕐</div>
 
                 <h3>Opening Hours</h3>
 
                 <p>
-                    সকাল ৮টা – রাত ১০টা<br>
+                    সকাল ৯টা – রাত ১০টা<br>
                     প্রতিদিন
                 </p>
 
@@ -1124,9 +979,7 @@ footer {
 
             <div class="info-card">
 
-                <div class="info-icon">
-                    📞
-                </div>
+                <div class="info-icon">📞</div>
 
                 <h3>Contact</h3>
 
@@ -1147,12 +1000,11 @@ footer {
 <!-- =========================
      CONTACT
 ========================= -->
-
 <section class="contact" id="contact">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-title">
 
             <h2>Contact First Aid Pharmacy</h2>
 
@@ -1208,7 +1060,6 @@ footer {
 <!-- =========================
      GOOGLE MAPS
 ========================= -->
-
 <section class="map-section">
 
     <div class="container">
@@ -1226,8 +1077,7 @@ footer {
             <a
                 class="btn btn-primary"
                 href="https://www.google.com/maps/search/?api=1&query=First+Aid+Pharmacy+Laldighi+Bazar+Phulbari+Dinajpur"
-                target="_blank"
-            >
+                target="_blank">
                 🗺️ Open Google Maps
             </a>
 
@@ -1237,13 +1087,10 @@ footer {
 
 </section>
 
-</main>
-
 
 <!-- =========================
      FOOTER
 ========================= -->
-
 <footer>
 
     <div class="container">
@@ -1252,18 +1099,16 @@ footer {
 
             <div class="footer-brand">
 
-                <a href="#home" class="logo">
+                <div class="logo">
 
                     <div class="logo-icon">+</div>
 
                     <div class="logo-text">
-
                         <strong>First Aid</strong>
                         <span>PHARMACY</span>
-
                     </div>
 
-                </a>
+                </div>
 
                 <p>
                     Your trusted local pharmacy
@@ -1273,37 +1118,57 @@ footer {
             </div>
 
 
-            <div class="footer-column">
+            <div>
 
-                <h3>Quick Links</h3>
+                <h3 class="footer-title">
+                    Quick Links
+                </h3>
 
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
 
             </div>
 
 
-            <div class="footer-column">
+            <div>
 
-                <h3>Contact Us</h3>
+                <h3 class="footer-title">
+                    Contact Us
+                </h3>
 
-                <a href="tel:+8801717713784">
-                    📞 01717-713784
-                </a>
+                <ul class="footer-links">
 
-                <a
-                    href="https://wa.me/8801717713784"
-                    target="_blank"
-                >
-                    💬 WhatsApp
-                </a>
+                    <li>
+                        📞 01717-713784
+                    </li>
 
-                <p>
-                    📍 Laldighi Bazar,
-                    Phulbari, Dinajpur
-                </p>
+                    <li>
+                        💬 WhatsApp
+                    </li>
+
+                    <li>
+                        📍 Laldighi Bazar,
+                        Phulbari, Dinajpur
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -1312,15 +1177,14 @@ footer {
 
         <div class="footer-bottom">
 
-            <div>
+            <span>
                 © 2026 First Aid Pharmacy.
                 All Rights Reserved.
-            </div>
+            </span>
 
-            <div>
-                Laldighi Bazar, Phulbari,
-                Dinajpur, Bangladesh
-            </div>
+            <span>
+                Laldighi Bazar, Phulbari, Dinajpur, Bangladesh
+            </span>
 
         </div>
 
@@ -1330,18 +1194,46 @@ footer {
 
 
 <!-- =========================
-     FLOATING WHATSAPP
+     OPEN STATUS
 ========================= -->
+<div class="open-status">
 
-<a
-    class="whatsapp-float"
-    href="https://wa.me/8801717713784"
-    target="_blank"
-    aria-label="Contact First Aid Pharmacy on WhatsApp"
->
-    💬
-</a>
+    <div class="open-title">
+        🕐 We Are Open
+    </div>
 
+    <div class="open-time">
+        সকাল ৯টা – রাত ১০টা
+    </div>
+
+    <span class="open-badge">
+        প্রতিদিন
+    </span>
+
+</div>
+
+
+<script>
+
+function toggleMenu(){
+
+    const menu = document.getElementById("navLinks");
+
+    menu.classList.toggle("active");
+
+}
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        document.getElementById("navLinks").classList.remove("active");
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
